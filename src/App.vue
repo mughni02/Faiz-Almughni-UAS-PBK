@@ -1,91 +1,47 @@
-<template>
-  <div id="app">
-    <!-- Loading Screen -->
-    <div v-if="isLoading" class="loading">
-      <div class="spinner"></div>
-      Memuat ZaitunOrganic...
-    </div>
+<script setup>
+import { computed } from 'vue';
+import { RouterView, useRoute } from 'vue-router';
+// Pastikan nama file ini sesuai dengan nama file komponen Anda (Navbar.vue atau Header.vue)
+import Navbar from './components/Navbar.vue'; 
+import Footer from './components/Footer.vue';
 
-    <!-- Main App -->
-    <div v-else>
-      <NavbarComponent 
-        :active-section="activeSection" 
-        :is-scrolled="isScrolled"
-        @navigate="scrollToSection"
-      />
-      
-      <HeroComponent @navigate="scrollToSection" />
-      
-      <CarouselComponent />
-      
-      <CardsComponent />
-      
-      <FooterComponent />
-    </div>
+const route = useRoute();
+
+// Cek apakah rute saat ini adalah bagian dari panel admin
+const isAdminRoute = computed(() => route.path.startsWith('/admin'));
+</script>
+
+<template>
+  <!-- 
+    Tag div ini membantu struktur layout flexbox dari file CSS global
+    untuk mendorong footer ke bawah.
+  -->
+  <div id="app-container">
+    <!-- Tampilkan Navbar hanya jika BUKAN rute admin -->
+    <Navbar v-if="!isAdminRoute" />
+
+    <!-- RouterView akan merender komponen halaman yang sesuai dengan URL -->
+    <main id="main-content">
+      <RouterView />
+    </main>
+
+    <!-- Tampilkan Footer hanya jika BUKAN rute admin -->
+    <Footer v-if="!isAdminRoute" />
   </div>
 </template>
 
-<script>
-import { ref, onMounted } from 'vue'
-import NavbarComponent from './components/NavbarComponent.vue'
-import HeroComponent from './components/HeroComponent.vue'
-import CarouselComponent from './components/CarouselComponent.vue'
-import CardsComponent from './components/CardsComponent.vue'
-import FooterComponent from './components/FooterComponent.vue'
-import { useScroll } from './composables/useScroll'
-
-export default {
-  name: 'App',
-  components: {
-    NavbarComponent,
-    HeroComponent,
-    CarouselComponent,
-    CardsComponent,
-    FooterComponent
-  },
-  setup() {
-    const isLoading = ref(true)
-    const { activeSection, isScrolled, scrollToSection } = useScroll()
-
-    onMounted(() => {
-      // Simulate loading
-      setTimeout(() => {
-        isLoading.value = false
-      }, 2000)
-    })
-
-    return {
-      isLoading,
-      activeSection,
-      isScrolled,
-      scrollToSection
-    }
-  }
-}
-</script>
-
-<style>
-.loading {
+<style scoped>
+/*
+  Kita menggunakan #id di sini yang akan ditargetkan oleh gaya global
+  di style.css untuk membuat layout sticky footer.
+*/
+#app-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 1.5rem;
-  color: #4CAF50;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.spinner {
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #4CAF50;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
-  margin-right: 1rem;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+#main-content {
+  flex-grow: 1; /* Membuat konten utama mengisi ruang yang tersedia */
 }
 </style>

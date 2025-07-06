@@ -1,15 +1,16 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
 import App from './App.vue'
-import './assets/styles/main.css'
+import router from './router'
+
+// DIUBAH: Impor file CSS global kita.
+// Pastikan path ini sesuai dengan lokasi file style.css Anda.
+import './assets/style.css'
 
 const app = createApp(App)
 
-// Global properties
-app.config.globalProperties.$formatCurrency = (amount) => {
-  return new Intl.NumberFormat('id-ID', {
-    style: 'currency',
-    currency: 'IDR'
-  }).format(amount)
-}
+app.use(createPinia())
+app.use(router)
 
 app.mount('#app')

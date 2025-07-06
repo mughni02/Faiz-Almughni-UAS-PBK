@@ -1,32 +1,110 @@
-# ZaitunOrganic Vue 3 Application
+ZaitunOrganic - Platform E-Commerce Produk Organik
+📜 Deskripsi Proyek
+ZaitunOrganic adalah sebuah aplikasi web e-commerce full-stack (simulasi) yang dibangun sebagai studi kasus untuk mendemonstrasikan pembuatan toko online modern menggunakan Vue.js. Aplikasi ini dirancang dengan antarmuka yang bersih, elegan, dan profesional untuk menjual berbagai produk organik, mulai dari makanan, minyak esensial, hingga produk herbal.
 
-Aplikasi web modern untuk toko online produk organik berkualitas tinggi, dibangun menggunakan Vue 3 dan Vite.
+Proyek ini mencakup dua peran utama: Pelanggan yang dapat menjelajahi dan membeli produk, serta Admin yang memiliki dasbor khusus untuk mengelola seluruh aspek operasional toko.
 
-## 🌟 Fitur Utama
+✨ Fitur Utama
+Aplikasi ini memiliki serangkaian fitur lengkap yang mencakup fungsionalitas untuk pelanggan dan administrator.
 
-- **Responsive Design**: Tampilan optimal di semua perangkat
-- **Modern UI/UX**: Interface yang bersih dan intuitif
-- **Vue 3 Composition API**: Menggunakan teknologi Vue terbaru
-- **Performance Optimized**: Build dengan Vite untuk performa terbaik
-- **SEO Friendly**: Meta tags dan struktur yang SEO optimal
-- **Smooth Animations**: Animasi yang halus dan menarik
+Untuk Pelanggan:
+Autentikasi Pengguna: Sistem registrasi dan login yang aman dan terpisah untuk setiap pengguna.
 
-## 🛠️ Teknologi
+Penjelajahan Produk: Halaman utama dengan produk unggulan dan halaman produk dengan semua item yang tersedia.
 
-- **Vue 3**: Framework JavaScript progresif
-- **Vite**: Build tool yang cepat
-- **CSS3**: Styling modern dengan gradients dan animations
-- **Composition API**: Pengelolaan state yang efisien
+Lihat Detail Produk: Modal pop-up interaktif untuk melihat deskripsi lengkap, harga, dan gambar produk.
 
-## 🚀 Instalasi dan Menjalankan
+Keranjang Belanja (CRUD):
 
-### Prerequisites
-- Node.js (versi 16 atau lebih baru)
-- npm atau yarn
+Menambah produk ke keranjang.
 
-### Langkah Instalasi
+Mengubah jumlah (quantity) item langsung di halaman keranjang.
 
-1. Clone repository
-```bash
-git clone https://github.com/your-username/zaitunorganic-vue.git
-cd zaitunorganic-vue
+Menghapus item dari keranjang.
+
+Data keranjang disimpan per pengguna menggunakan localStorage.
+
+Sistem Checkout & Pengiriman:
+
+Halaman checkout khusus untuk mengisi alamat pengiriman.
+
+Kalkulasi subtotal, biaya pengiriman tetap, dan total pembayaran.
+
+Riwayat Pesanan: Halaman khusus bagi pengguna untuk melihat semua pesanan yang pernah mereka buat, diurutkan dari yang terbaru.
+
+Form Kontak Fungsional: Pengguna dapat mengirim pesan yang akan diterima dan disimpan di sisi admin.
+
+Untuk Admin:
+Dasbor Admin Profesional: Halaman ringkasan yang menampilkan statistik penting seperti total produk, jumlah pesanan, pesan masuk, dan total pengguna.
+
+Manajemen Produk (CRUD Penuh):
+
+Menambah produk baru melalui form modal.
+
+Mengedit detail produk yang sudah ada, termasuk harga, stok, dan deskripsi.
+
+Menghapus produk dari daftar.
+
+Manajemen Pesanan Fungsional:
+
+Melihat semua pesanan yang masuk dari pelanggan.
+
+Mengubah status pesanan (Baru, Diproses, Dikirim, Selesai, Dibatalkan) yang perubahannya akan tersimpan.
+
+Lihat Pesan Masuk: Halaman khusus untuk membaca semua pesan yang dikirim oleh pengguna melalui form kontak, diurutkan dari yang terbaru.
+
+🛠️ Teknologi yang Digunakan
+Proyek ini dibangun menggunakan ekosistem Vue.js modern dan beberapa teknologi pendukung:
+
+Frontend:
+
+Vue.js 3 (Composition API & <script setup>)
+
+Vue Router untuk navigasi dan routing halaman.
+
+Pinia untuk manajemen state global (keranjang belanja, status login, dll.).
+
+CSS Manual (Scoped) untuk styling komponen yang modular, terisolasi, dan elegan.
+
+Backend (Simulasi):
+
+json-server untuk menyediakan REST API tiruan yang cepat dan mudah untuk data produk, pengguna, pesanan, dan pesan.
+
+HTTP Client:
+
+Axios untuk melakukan permintaan ke API.
+
+Testing:
+
+Vitest untuk unit testing komponen dan Pinia stores.
+
+@vue/test-utils untuk membantu proses mounting komponen saat testing.
+
+🚀 Panduan Instalasi dan Menjalankan Proyek
+Untuk menjalankan proyek ini di komputer lokal Anda, ikuti langkah-langkah berikut:
+
+1. Clone Repositori
+git clone [https://github.com/mughni02/zaitunorganic.git](https://github.com/mughni02/zaitunorganic.git)
+cd zaitunorganic
+
+2. Install Dependensi
+Pastikan Anda memiliki Node.js terinstal. Kemudian, jalankan perintah berikut untuk menginstal semua paket yang dibutuhkan.
+
+npm install
+
+3. Jalankan Server API (Backend)
+Proyek ini membutuhkan json-server sebagai backend. Buka terminal baru dan jalankan perintah berikut. Biarkan terminal ini tetap berjalan.
+
+npm run api
+
+Server API akan berjalan di http://localhost:3000.
+
+4. Jalankan Aplikasi Vue (Frontend)
+Di terminal pertama Anda, jalankan perintah berikut untuk memulai server development Vite.
+
+npm run dev
+
+Aplikasi akan tersedia di http://localhost:5173 (atau port lain yang tersedia).
+
+5. Menjalankan Unit Tests
+Untuk menjalankan semua tes yang telah

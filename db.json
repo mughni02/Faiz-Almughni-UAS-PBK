@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin Zaitun",
+      "email": "admin@zaitun.com",
+      "password": "password123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Siti Pelanggan",
+      "email": "siti@gmail.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "5c96",
+      "name": "mhaikal",
+      "email": "ad@zaitun.com",
+      "password": "112345",
+      "role": "customer"
+    },
+    {
+      "id": "f28a",
+      "name": "altahf",
+      "email": "tuyul@zaitun.com",
+      "password": "12345",
+      "role": "customer"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Minyak Zaitun Extra Virgin",
+      "category": "Minyak",
+      "price": 1500,
+      "stock": 50,
+      "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-7r98t-lzqx8tzs4g4t4e",
+      "description": "Minyak zaitun murni kualitas terbaik yang diproses tanpa pemanasan (cold-pressed) untuk menjaga nutrisi dan aroma alaminya. Sangat baik untuk kesehatan jantung dan salad dressing."
+    },
+    {
+      "id": "2",
+      "name": "Madu Hutan Asli",
+      "category": "Madu",
+      "price": 1200,
+      "stock": 30,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5M7nybxOmVTZIaVAfGZ4TgODHmhHtaGU9LA&s",
+      "description": "Madu asli yang dipanen dari lebah liar di hutan pedalaman. Kaya akan antioksidan dan memiliki sifat antibakteri alami."
+    },
+    {
+      "id": "3",
+      "name": "Kurma Ajwa Premium",
+      "category": "Buah Kering",
+      "price": 2500,
+      "stock": 100,
+      "imageUrl": "https://cdn.ralali.id/assets/img/Libraries/Kurma-Ajwa-Al-Madina-Premium-1-kg_uvT6Dg8MviHlx0dU_1618836522.png",
+      "description": "Kurma Ajwa pilihan dari Madinah yang dikenal sebagai 'kurma nabi'. Memiliki tekstur lembut, rasa manis yang khas, dan kaya akan manfaat kesehatan."
+    },
+    {
+      "id": "4",
+      "name": "Habbatussauda Kapsul",
+      "category": "Herbal",
+      "price": 75000,
+      "stock": 80,
+      "imageUrl": "https://www.mandiriagency.com/image-product/img9864-1605002553.jpg",
+      "description": "Kapsul minyak habbatussauda (jintan hitam) murni yang kaya akan thymoquinone, bermanfaat untuk meningkatkan daya tahan tubuh dan menjaga kesehatan secara menyeluruh."
+    },
+    {
+      "id": "5b4c",
+      "name": "Ayam Organik",
+      "category": "daging",
+      "price": 127000,
+      "stock": 45,
+      "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//96/MTA-7858131/berkah_chicken_organik_berkah_chicken_organik_ayam_potong_-1000_-_1100_g-_full01_95d3e6c4.jpg",
+      "description": "bagus"
+    },
+    {
+      "id": "9b6b",
+      "name": "daging sapi",
+      "category": "daging",
+      "price": 244000,
+      "stock": 30,
+      "imageUrl": "https://flexypack.com/wp-content/uploads/2022/02/03a.-4-241x300.jpg",
+      "description": "fresh and healthy"
+    },
+    {
+      "id": "aa32",
+      "name": "teri nasi",
+      "category": "ikan",
+      "price": 23000,
+      "stock": 190,
+      "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-7rbk2-m6i0nuxn84dmfe",
+      "description": "dari lautan indonesia"
+    }
+  ],
+  "messages": [
+    {
+      "users": [],
+      "products": [],
+      "orders": [],
+      "messages": [],
+      "id": "05ba"
+    },
+    {
+      "id": "62ae",
+      "name": "as",
+      "email": "ad@zaitun.com",
+      "message": "tambah",
+      "date": "2025-07-06T11:05:41.810Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "27a4",
+      "userId": "5c96",
+      "date": "2025-07-06T10:40:46.901Z",
+      "total": 3700,
+      "status": "Diproses",
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 1
+        },
+        {
+          "productId": "3",
+          "name": "Kurma Ajwa Premium",
+          "price": 2500,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "cf20",
+      "userId": "5c96",
+      "date": "2025-07-06T10:44:22.017Z",
+      "total": 1200,
+      "status": "Selesai",
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "f1de",
+      "userId": "5c96",
+      "date": "2025-07-06T15:48:20.239Z",
+      "subtotal": 1200,
+      "shippingCost": 15000,
+      "total": 16200,
+      "status": "Dikirim",
+      "shippingAddress": {
+        "recipientName": "mhaikal",
+        "phone": "23",
+        "address": "sdffd",
+        "city": "dsf",
+        "postalCode": "dsfsdgg"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "44c1",
+      "userId": "5c96",
+      "date": "2025-07-06T15:50:04.315Z",
+      "subtotal": 2500,
+      "shippingCost": 15000,
+      "total": 17500,
+      "status": "Baru",
+      "shippingAddress": {
+        "recipientName": "mhaikal",
+        "phone": "232332",
+        "address": "jambi",
+        "city": "jambi",
+        "postalCode": "23265"
+      },
+      "items": [
+        {
+          "productId": "3",
+          "name": "Kurma Ajwa Premium",
+          "price": 2500,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
