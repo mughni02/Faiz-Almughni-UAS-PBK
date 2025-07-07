@@ -41,7 +41,7 @@
       "id": "1",
       "name": "Minyak Zaitun Extra Virgin",
       "category": "Minyak",
-      "price": 1500,
+      "price": 150000,
       "stock": 50,
       "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-7r98t-lzqx8tzs4g4t4e",
       "description": "Minyak zaitun murni kualitas terbaik yang diproses tanpa pemanasan (cold-pressed) untuk menjaga nutrisi dan aroma alaminya. Sangat baik untuk kesehatan jantung dan salad dressing."
@@ -50,7 +50,7 @@
       "id": "2",
       "name": "Madu Hutan Asli",
       "category": "Madu",
-      "price": 1200,
+      "price": 1200999,
       "stock": 30,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5M7nybxOmVTZIaVAfGZ4TgODHmhHtaGU9LA&s",
       "description": "Madu asli yang dipanen dari lebah liar di hutan pedalaman. Kaya akan antioksidan dan memiliki sifat antibakteri alami."
@@ -59,7 +59,7 @@
       "id": "3",
       "name": "Kurma Ajwa Premium",
       "category": "Buah Kering",
-      "price": 2500,
+      "price": 2500900,
       "stock": 100,
       "imageUrl": "https://cdn.ralali.id/assets/img/Libraries/Kurma-Ajwa-Al-Madina-Premium-1-kg_uvT6Dg8MviHlx0dU_1618836522.png",
       "description": "Kurma Ajwa pilihan dari Madinah yang dikenal sebagai 'kurma nabi'. Memiliki tekstur lembut, rasa manis yang khas, dan kaya akan manfaat kesehatan."
@@ -115,6 +115,13 @@
       "email": "ad@zaitun.com",
       "message": "tambah",
       "date": "2025-07-06T11:05:41.810Z"
+    },
+    {
+      "id": "f940",
+      "name": "altahf",
+      "email": "adm@zaitun.com",
+      "message": "laeflkaefnlnwewgfnkwnegnkwEGNWSegnlnlsd,nlnsddlfnlsangfklgjweojoewenongfl sLGLMDSMNLKNLKSNSGLNSKELGSNKLNWEGKLNSDSLNKLNFKLNGLJKN",
+      "date": "2025-07-07T12:54:35.934Z"
     }
   ],
   "orders": [
@@ -185,7 +192,7 @@
       "subtotal": 2500,
       "shippingCost": 15000,
       "total": 17500,
-      "status": "Baru",
+      "status": "Selesai",
       "shippingAddress": {
         "recipientName": "mhaikal",
         "phone": "232332",
@@ -209,7 +216,7 @@
       "subtotal": 1200,
       "shippingCost": 15000,
       "total": 16200,
-      "status": "Baru",
+      "status": "Selesai",
       "shippingAddress": {
         "recipientName": "faiz",
         "phone": "0208123455",
@@ -233,7 +240,7 @@
       "subtotal": 1200,
       "shippingCost": 15000,
       "total": 16200,
-      "status": "Baru",
+      "status": "Selesai",
       "shippingAddress": {
         "recipientName": "mhaikal",
         "phone": "24",
@@ -257,7 +264,7 @@
       "subtotal": 6300,
       "shippingCost": 15000,
       "total": 21300,
-      "status": "Baru",
+      "status": "Selesai",
       "shippingAddress": {
         "recipientName": "mhaikal",
         "phone": "awqdqdw",
@@ -277,6 +284,84 @@
           "name": "Minyak Zaitun Extra Virgin",
           "price": 1500,
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9be6",
+      "userId": "5c96",
+      "date": "2025-07-07T08:59:03.595Z",
+      "subtotal": 7200,
+      "shippingCost": 15000,
+      "total": 22200,
+      "status": "Dibatalkan",
+      "shippingAddress": {
+        "recipientName": "mhaikal",
+        "phone": "uygyy",
+        "address": "hyh",
+        "city": "bu",
+        "postalCode": "n"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Minyak Zaitun Extra Virgin",
+          "price": 1500,
+          "quantity": 4
+        },
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "4ca8",
+      "userId": "5c96",
+      "date": "2025-07-07T12:54:03.439Z",
+      "subtotal": 35499900,
+      "shippingCost": 15000,
+      "total": 35514900,
+      "status": "Baru",
+      "shippingAddress": {
+        "recipientName": "mhaikal",
+        "phone": "0923",
+        "address": "papua",
+        "city": "zimbabwe",
+        "postalCode": "23265"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Minyak Zaitun Extra Virgin",
+          "price": 1500,
+          "quantity": 5
+        },
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 9
+        },
+        {
+          "productId": "9b6b",
+          "name": "daging sapi",
+          "price": 244000,
+          "quantity": 1
+        },
+        {
+          "productId": "4",
+          "name": "Habbatussauda Kapsul",
+          "price": 75000,
+          "quantity": 3
+        },
+        {
+          "productId": "3",
+          "name": "Kurma Ajwa Premium",
+          "price": 2500900,
+          "quantity": 14
         }
       ]
     }
