@@ -61,9 +61,9 @@ onUnmounted(() => {
 // Menampilkan 4 produk unggulan saja
 const featuredProducts = computed(() => products.value.slice(0, 4));
 
-function handleAddToCart(product) {
-  cartStore.addToCart(product);
-  alert(`${product.name} telah ditambahkan ke keranjang!`);
+function handleAddToCart(product, quantity) {
+  cartStore.addToCart(product, quantity);
+  alert(`${quantity}x ${product.name} berhasil ditambahkan ke keranjang!`);
 }
 
 // Fungsi untuk membuka modal detail (DITAMBAHKAN)
@@ -90,7 +90,7 @@ function showDetails(product) {
       <div class="section-container">
         <h2 class="section-title">Produk Unggulan Kami</h2>
         <div v-if="productStore.isLoading" class="loading-indicator">Memuat produk...</div>
-        <div v-else class="product-grid">
+        <div class="product-grid">
           <!-- DIUBAH: Tambahkan @view-details untuk menangkap event -->
           <ProductCard 
             v-for="product in featuredProducts" 

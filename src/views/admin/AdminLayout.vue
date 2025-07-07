@@ -8,6 +8,7 @@ const navigation = [
   { name: 'Kelola Produk', href: '/admin/products' },
   { name: 'Kelola Pesanan', href: '/admin/orders' },
   { name: 'Lihat Pesan', href: '/admin/messages' },
+  { name: 'Kelola Pengguna', href: '/admin/users' },
 ];
 </script>
 

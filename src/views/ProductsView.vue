@@ -17,9 +17,9 @@ onMounted(() => {
   productStore.fetchProducts();
 });
 
-function handleAddToCart(product) {
-  cartStore.addToCart(product);
-  alert(`${product.name} berhasil ditambahkan ke keranjang!`);
+function handleAddToCart(product, quantity) {
+  cartStore.addToCart(product, quantity);
+  alert(`${quantity}x ${product.name} berhasil ditambahkan ke keranjang!`);
 }
 
 // Fungsi untuk membuka modal saat event 'view-details' diterima
@@ -37,7 +37,7 @@ function showDetails(product) {
       Memuat produk, harap tunggu...
     </div>
 
-    <div v-else class="product-grid">
+    <div class="product-grid">
       <!-- 
         PENTING: Tambahkan @view-details="showDetails" di sini 
         untuk menangkap sinyal dari ProductCard.

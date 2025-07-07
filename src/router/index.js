@@ -26,6 +26,7 @@ const routes = [
       { path: 'orders', name: 'AdminOrders', component: () => import('../views/admin/ManageOrdersView.vue') },
       // DITAMBAHKAN: Rute baru untuk halaman pesan
       { path: 'messages', name: 'AdminMessages', component: () => import('../views/admin/ViewMessages.vue') },
+      { path: 'users', name: 'AdminUsers', component: () => import('../views/admin/ManageUsersView.vue') },
     ]
   },
    // Fallback

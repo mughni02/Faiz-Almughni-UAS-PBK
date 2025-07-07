@@ -21,11 +21,11 @@ export const useCartStore = defineStore('cart', () => {
   function loadCartForUser() { if (userCartKey.value) { const savedCart = localStorage.getItem(userCartKey.value); items.value = savedCart ? JSON.parse(savedCart) : []; } }
   function clearCart() { items.value = []; saveCartToLocalStorage(); }
   
-  function addToCart(product) {
+  function addToCart(product, quantity = 1) {
     if (!authStore.isAuthenticated) { alert("Silakan login terlebih dahulu."); return; }
     const existingItem = items.value.find(item => item.productId === product.id);
-    if (existingItem) { existingItem.quantity++; } 
-    else { items.value.push({ productId: product.id, name: product.name, price: product.price, quantity: 1 }); }
+    if (existingItem) { existingItem.quantity += quantity; } 
+    else { items.value.push({ productId: product.id, name: product.name, price: product.price, quantity: quantity }); }
   }
 
   function saveCartToLocalStorage() {
@@ -108,6 +108,10 @@ export const useCartStore = defineStore('cart', () => {
       alert("Terjadi kesalahan saat membuat pesanan. Silakan coba lagi.");
       return false; // Kembalikan false untuk menandakan gagal
     }
+  }
+
+  if (authStore.isAuthenticated) {
+      loadCartForUser();
   }
 
   return { 

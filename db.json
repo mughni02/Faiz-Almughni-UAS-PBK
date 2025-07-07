@@ -27,6 +27,13 @@
       "email": "tuyul@zaitun.com",
       "password": "12345",
       "role": "customer"
+    },
+    {
+      "id": "ebd9",
+      "name": "faiz",
+      "email": "faiz@gmail.com",
+      "password": "faiz",
+      "role": "customer"
     }
   ],
   "products": [
@@ -116,7 +123,7 @@
       "userId": "5c96",
       "date": "2025-07-06T10:40:46.901Z",
       "total": 3700,
-      "status": "Diproses",
+      "status": "Selesai",
       "items": [
         {
           "productId": "2",
@@ -154,7 +161,7 @@
       "subtotal": 1200,
       "shippingCost": 15000,
       "total": 16200,
-      "status": "Dikirim",
+      "status": "Selesai",
       "shippingAddress": {
         "recipientName": "mhaikal",
         "phone": "23",
@@ -191,6 +198,84 @@
           "productId": "3",
           "name": "Kurma Ajwa Premium",
           "price": 2500,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "0fda",
+      "userId": "ebd9",
+      "date": "2025-07-06T16:15:08.656Z",
+      "subtotal": 1200,
+      "shippingCost": 15000,
+      "total": 16200,
+      "status": "Baru",
+      "shippingAddress": {
+        "recipientName": "faiz",
+        "phone": "0208123455",
+        "address": "pekanbaru",
+        "city": "pekan",
+        "postalCode": "git push -u origin main"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "d516",
+      "userId": "5c96",
+      "date": "2025-07-07T04:15:54.732Z",
+      "subtotal": 1200,
+      "shippingCost": 15000,
+      "total": 16200,
+      "status": "Baru",
+      "shippingAddress": {
+        "recipientName": "mhaikal",
+        "phone": "24",
+        "address": "wer",
+        "city": "wet",
+        "postalCode": "32"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "e02a",
+      "userId": "5c96",
+      "date": "2025-07-07T04:23:32.819Z",
+      "subtotal": 6300,
+      "shippingCost": 15000,
+      "total": 21300,
+      "status": "Baru",
+      "shippingAddress": {
+        "recipientName": "mhaikal",
+        "phone": "awqdqdw",
+        "address": "dwdewdwdq",
+        "city": "wwedwq",
+        "postalCode": "wddwq"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 4
+        },
+        {
+          "productId": "1",
+          "name": "Minyak Zaitun Extra Virgin",
+          "price": 1500,
           "quantity": 1
         }
       ]
