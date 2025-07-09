@@ -364,6 +364,30 @@
           "quantity": 14
         }
       ]
+    },
+    {
+      "id": "0866",
+      "userId": "ebd9",
+      "date": "2025-07-08T06:06:52.093Z",
+      "subtotal": 14400,
+      "shippingCost": 15000,
+      "total": 29400,
+      "status": "Baru",
+      "shippingAddress": {
+        "recipientName": "faiz",
+        "phone": "s",
+        "address": "sa",
+        "city": "as",
+        "postalCode": "sa"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200,
+          "quantity": 12
+        }
+      ]
     }
   ]
 }
