@@ -34,6 +34,20 @@
       "email": "faiz@gmail.com",
       "password": "faiz",
       "role": "customer"
+    },
+    {
+      "id": "8109",
+      "name": "hani",
+      "email": "hani@gmail.com",
+      "password": "hani",
+      "role": "customer"
+    },
+    {
+      "id": "93f3",
+      "name": "jjjhh",
+      "email": "kl@gmail.com",
+      "password": "kl",
+      "role": "customer"
     }
   ],
   "products": [
@@ -386,6 +400,30 @@
           "name": "Madu Hutan Asli",
           "price": 1200,
           "quantity": 12
+        }
+      ]
+    },
+    {
+      "id": "34b4",
+      "userId": "ebd9",
+      "date": "2025-07-09T06:40:07.080Z",
+      "subtotal": 3602997,
+      "shippingCost": 15000,
+      "total": 3617997,
+      "status": "Baru",
+      "shippingAddress": {
+        "recipientName": "faiz",
+        "phone": "sf",
+        "address": "af",
+        "city": "asf",
+        "postalCode": "asf"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Madu Hutan Asli",
+          "price": 1200999,
+          "quantity": 3
         }
       ]
     }

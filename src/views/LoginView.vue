@@ -33,7 +33,7 @@ async function handleLogin() {
 <template>
   <div class="login-container">
     <div class="login-card">
-      <h2 class="card-title">Selamat Datang Kembali</h2>
+      <h2 class="card-title">Selamat Datang</h2>
       <p class="card-subtitle">Login untuk melanjutkan belanja Anda.</p>
       <form class="login-form" @submit.prevent="handleLogin">
         <div class="form-group">
